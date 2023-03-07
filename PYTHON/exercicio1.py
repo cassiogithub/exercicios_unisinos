@@ -1,13 +1,12 @@
-def dizer_ola(isExercicio):
-    if (isExercicio):
-        print('\nExercicio I\n')
+def dizer_ola(isExercício):
+    if (isExercício):
+        print('\nExercício I\n')
 
     nome = input("Digite seu nome\n")
     print(f'Olá {nome}')
 
-
 def exercicio_dois():
-    print('\nExercicio II\n')
+    print('\nExercício II\n')
     nomeJogadorA = input('Digite o nome de  1 jogador:\n')
     idadeJogadorA = int(input('Digite a idade deste  jogador:\n'))
 
@@ -22,7 +21,7 @@ def exercicio_dois():
         print('Ambos jogadores tem a mesma idade.')
 
 def exercicio_tres():
-    print('\nExercicio III\n')
+    print('\nExercício III\n')
     dizer_ola(False)
 
     idadePessoa = int(input('Digite a sua idade:\n'))
@@ -39,6 +38,7 @@ def exercicio_tres():
         print('Idade inválida\n')
 
 def exercicio_quatro():
+    print('\nExercício IV\n')
     valorTotal = 0
     for i in range(4):
         numero = float(input('Digite um valor:\n'))
@@ -51,8 +51,29 @@ def exercicio_quatro():
     print('Valor Ímpar')
     return
 
+def exercicio_cinco():
+    print('\nExercício V\n')
 
+    VALOR_DEFAULT = 0
+    def verifica_negativo_positivo(valor):
+        if valor > VALOR_DEFAULT:
+            print('Valor é positvo\n')
+        elif valor < VALOR_DEFAULT:
+            print('Valor é negativo\n')
+        elif valor == VALOR_DEFAULT:
+            print(f'Valor é igual a {VALOR_DEFAULT}\n')
+        else:
+            print(f'Valor informado é inválido')
+
+    for i in range(10):
+        valor = int(input('Digite um valor:\n'))
+        verifica_negativo_positivo(valor)
+
+
+
+# PARA TESTAR EM CONSOLE AS FUNÇÕES DESCOMENTAR OS METODOS
 # dizer_ola(True)
 # exercicio_dois()
 # exercicio_tres()
-exercicio_quatro()
+# exercicio_quatro()
+# exercicio_cinco()
