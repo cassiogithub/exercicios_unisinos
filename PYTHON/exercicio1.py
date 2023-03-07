@@ -77,7 +77,6 @@ def exercicio_cinco():
 def exericio_oito():
     valorA = int(input('Digite o valor A:'))
     valorB = int(input('Digite o valor B:'))
-#    print(f'divisão: {valorA / valorB: .2f}')
     print(f'divisão: {divisao(valorA, valorB, 2)}')
     print(f'divisão: {divisao(valorA, valorB, 3)}')
     print(f'divisão: {divisao(valorA, valorB, 4)}')
