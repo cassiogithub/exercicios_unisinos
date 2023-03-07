@@ -38,6 +38,21 @@ def exercicio_tres():
     else:
         print('Idade inválida\n')
 
+def exercicio_quatro():
+    valorTotal = 0
+    for i in range(4):
+        numero = float(input('Digite um valor:\n'))
+        valorTotal += numero
+
+    if((valorTotal % 2) == 0):
+        print('Valor par\n')
+        return
+
+    print('Valor Ímpar')
+    return
+
+
 # dizer_ola(True)
 # exercicio_dois()
 # exercicio_tres()
+exercicio_quatro()
