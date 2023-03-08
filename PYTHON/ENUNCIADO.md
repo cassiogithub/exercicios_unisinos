@@ -66,7 +66,7 @@ print(x)
 
 será impresso o valor: 38
 
-*# Exercícío 7
+# Exercícío 7
 
 Para cada situação abaixo, escreva um trecho de código para solicitar que o usuário digite tais dados e eles sejam armazenados na memória de forma correta (em relação ao tipo do dado):
 - Solicitar o nome do usuário
