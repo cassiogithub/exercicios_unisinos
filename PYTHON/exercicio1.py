@@ -52,7 +52,6 @@ def exercicio_quatro():
         return
 
     print('Valor Ímpar')
-    return
 
 
 def exercicio_cinco():
@@ -74,20 +73,22 @@ def exercicio_cinco():
         valor = int(input('Digite um valor:\n'))
         verifica_negativo_positivo(valor)
 
-def exericio_oito():
-    valorA = int(input('Digite o valor A:'))
-    valorB = int(input('Digite o valor B:'))
-    print(f'divisão: {divisao(valorA, valorB, 2)}')
-    print(f'divisão: {divisao(valorA, valorB, 3)}')
-    print(f'divisão: {divisao(valorA, valorB, 4)}')
 
-def divisao(valorA, valorB, casasDecimais):
-    return f'{valorA / valorB: .{casasDecimais}f}'
+def exericio_oito():
+    valor_a = int(input('Digite o valor A:'))
+    valor_b = int(input('Digite o valor B:'))
+    print(f'divisão: {divisao(valor_a, valor_b, 2)}')
+    print(f'divisão: {divisao(valor_a, valor_b, 3)}')
+    print(f'divisão: {divisao(valor_a, valor_b, 4)}')
+
+
+def divisao(valor_a, valor_b, casas_decimais):
+    return f'{valor_a / valor_b: .{casas_decimais}f}'
 
 # PARA TESTAR EM CONSOLE AS FUNÇÕES DESCOMENTAR OS METODOS
 # dizer_ola(True)
 # exercicio_dois()
 # exercicio_tres()
-# exercicio_quatro()
+exercicio_quatro()
 # exercicio_cinco()
 # exericio_oito()
