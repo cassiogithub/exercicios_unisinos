@@ -72,10 +72,20 @@ def exericio_seis():
     area_circulo = 3.14159 * e**2
     print(f'Area de círculo  {area_circulo}')
 
+def exercicio_sete():
+    nota_dez_porcento = float(input('Digite a nota que vale 10%: \n'))
+    nota_trinta_porcento = float(input('Digite a nota que vale 30%: \n'))
+    nota_sessenta_porcento = float(input('Digite a nota que vale 60%:: \n'))
+
+    nota_final = (nota_dez_porcento * 0.1) +  (nota_trinta_porcento  * 0.3) + (nota_sessenta_porcento * 0.6)
+
+    print(f'Sua nota final é: {nota_final}')
+
 # exercicio_um(False)
 # exercicio_dois()
 # exercicio_tres()
 # exercicio_quatro()
 # exercicio_cinco()
-exericio_seis()
+# exericio_seis()
+# exercicio_sete()
 
