@@ -46,6 +46,7 @@ def exercicio_quatro():
           f'Rua: {endereco.logradouro}, no CEP: {endereco.cep}')
     return
 
+
 def exercicio_cinco():
     soma = 0
     produto = 1
@@ -56,6 +57,7 @@ def exercicio_cinco():
     print(f'A soma dos produtos é: {soma}')
     print(f'O produto é: {produto}')
 
+
 def exericio_seis():
     a = int(input('Digite um valor inteiro:'))
     b = int(input('Digite um valor inteiro:'))
@@ -63,24 +65,24 @@ def exericio_seis():
     d = int(input('Digite um valor inteiro:'))
     e = int(input('Digite um valor inteiro:'))
 
-    area_triangulo = (b * c ) / 2
+    area_triangulo = (b * c) / 2
     print(f'Area de um triangulo {area_triangulo}')
 
     perimetro_retangulo = a + b + c + d
     print(f'Perímetro de um retêngulo {perimetro_retangulo}')
 
-    area_circulo = 3.14159 * e**2
+    area_circulo = 3.14159 * e ** 2
     print(f'Area de círculo  {area_circulo}')
+
 
 def exercicio_sete():
     nota_dez_porcento = float(input('Digite a nota que vale 10%: \n'))
     nota_trinta_porcento = float(input('Digite a nota que vale 30%: \n'))
     nota_sessenta_porcento = float(input('Digite a nota que vale 60%:: \n'))
 
-    nota_final = (nota_dez_porcento * 0.1) +  (nota_trinta_porcento  * 0.3) + (nota_sessenta_porcento * 0.6)
+    nota_final = (nota_dez_porcento * 0.1) + (nota_trinta_porcento * 0.3) + (nota_sessenta_porcento * 0.6)
 
     print(f'Sua nota final é: {nota_final}')
-
 # exercicio_um(False)
 # exercicio_dois()
 # exercicio_tres()
@@ -88,4 +90,3 @@ def exercicio_sete():
 # exercicio_cinco()
 # exericio_seis()
 # exercicio_sete()
-
