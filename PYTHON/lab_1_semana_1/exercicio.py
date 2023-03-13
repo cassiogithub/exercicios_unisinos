@@ -123,7 +123,7 @@ def exercicio_oito():
     grau_a_final: float = dados_grau_a()
     grau_b_final: float = dados_grau_b()
     nota_final: float = calcula_nota_final(grau_a_final, grau_b_final)
-    print(f'\nSua nota final é {nota_final} parabéns! \n')
+    print(f'\nSua nota final é {nota_final}, parabéns! \n')
 
 
 # exercicio_um(False)
