@@ -104,14 +104,14 @@ def calcula_nota_final(grau_a, grau_b):
     return (grau_a * PORCENTAGEM_GRAU_A) + (grau_b * PORCENTAGEM_GRAU_B)
 
 
-def pede_dados_grau_a():
+def dados_grau_a():
     print('Olá, você digitará as notas equivalentes ao Grau A: \n')
     grau_a_pratica = float(input(f'Digite sua nota prática: \n'))
     grau_a_teorica = float(input(f'Digite sua nota teórica \n'))
     return calcula_grau_a(grau_a_pratica, grau_a_teorica)
 
 
-def pede_dados_grau_b():
+def dados_grau_b():
     print('Obrigado, agora você digitará as notas equivalentes ao Grau B: \n')
     grau_b_laboratorio = float(input(f'Digite sua nota de laboratorio: \n'))
     grau_b_teorica = float(input(f'Digite sua nota teorica \n'))
@@ -120,8 +120,8 @@ def pede_dados_grau_b():
 
 
 def exercicio_oito():
-    grau_a_final = pede_dados_grau_a()
-    grau_b_final = pede_dados_grau_b()
+    grau_a_final = dados_grau_a()
+    grau_b_final = dados_grau_b()
     nota_final = calcula_nota_final(grau_a_final, grau_b_final)
     print(f'\nSua nota final é {nota_final} parabéns! \n')
 
