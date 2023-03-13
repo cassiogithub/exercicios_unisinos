@@ -79,10 +79,47 @@ def exercicio_sete():
     nota_dez_porcento = float(input('Digite a nota que vale 10%: \n'))
     nota_trinta_porcento = float(input('Digite a nota que vale 30%: \n'))
     nota_sessenta_porcento = float(input('Digite a nota que vale 60%:: \n'))
-
     nota_final = (nota_dez_porcento * 0.1) + (nota_trinta_porcento * 0.3) + (nota_sessenta_porcento * 0.6)
 
     print(f'Sua nota final é: {nota_final}')
+
+
+def calcula_grau_a(nota_pratica: float, nota_teorica: float):
+    PORCENTAGEM_NOTA_TEORICA: float = 0.55
+    PORCENTAGEM_NOTA_PRATICA: float = 0.45
+    return (nota_teorica * PORCENTAGEM_NOTA_TEORICA) + (nota_pratica * PORCENTAGEM_NOTA_PRATICA)
+
+def calcula_grau_b(nota_laboratorio, nota_teorica, nota_extraclasse):
+    PORCENTAGEM_NOTA_LABORATORIO: float = 0.6
+    PORCENTAGEM_NOTA_TEORICA: float = 0.2
+    PORCENTAGEM_NOTA_EXTRACLASSE: float = 0.2
+    return (nota_laboratorio * PORCENTAGEM_NOTA_LABORATORIO) + (nota_teorica * PORCENTAGEM_NOTA_TEORICA) + (
+            nota_extraclasse * PORCENTAGEM_NOTA_EXTRACLASSE)
+
+
+def calcula_nota_final(grau_a, grau_b):
+    PORCENTAGEM_GRAU_A: float = 0.33
+    PORCENTAGEM_GRAU_B: float = 0.67
+    return (grau_a * PORCENTAGEM_GRAU_A) + (grau_b * PORCENTAGEM_GRAU_B)
+
+
+def exercicio_oito():
+    print('Olá, você digitará as notas equivalentes ao Grau A: \n')
+    grau_a_pratica = float(input(f'Digite sua nota prática: \n'))
+    grau_a_teorica = float(input(f'Digite sua nota teórica \n'))
+    grau_a_final = calcula_grau_a(grau_a_pratica, grau_a_teorica)
+
+    print('Obrigado, agora você digitará as notas equivalentes ao Grau B: \n')
+    grau_b_laboratorio = float(input(f'Digite sua nota de laboratorio: \n'))
+    grau_b_teorica = float(input(f'Digite sua nota teorica \n'))
+    grau_b_extraclasse = float(input(f'Digite sua nota extraclasse \n'))
+    grau_b_final = calcula_grau_b(grau_b_laboratorio, grau_b_teorica, grau_b_extraclasse)
+
+    nota_final = calcula_nota_final(grau_a_final, grau_b_final)
+
+    print(f'\nSua nota final é {nota_final} parabéns! \n')
+
+
 # exercicio_um(False)
 # exercicio_dois()
 # exercicio_tres()
@@ -90,3 +127,4 @@ def exercicio_sete():
 # exercicio_cinco()
 # exericio_seis()
 # exercicio_sete()
+exercicio_oito()
