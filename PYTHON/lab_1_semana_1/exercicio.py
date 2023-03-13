@@ -7,7 +7,7 @@ class Endereco:
         self.estado = estado
 
 
-def exercicio_um(com_retorno):
+def exercicio_um(com_retorno: bool):
     nome_usuario = input('Digite seu nome: \n')
 
     if com_retorno is False:
@@ -58,7 +58,7 @@ def exercicio_cinco():
     print(f'O produto é: {produto}')
 
 
-def exericio_seis():
+def exercicio_seis():
     a = int(input('Digite um valor inteiro:'))
     b = int(input('Digite um valor inteiro:'))
     c = int(input('Digite um valor inteiro:'))
@@ -69,7 +69,7 @@ def exericio_seis():
     print(f'Area de um triangulo {area_triangulo}')
 
     perimetro_retangulo = a + b + c + d
-    print(f'Perímetro de um retêngulo {perimetro_retangulo}')
+    print(f'Perímetro de um retângulo {perimetro_retangulo}')
 
     area_circulo = 3.14159 * e ** 2
     print(f'Area de círculo  {area_circulo}')
@@ -84,13 +84,13 @@ def exercicio_sete():
     print(f'Sua nota final é: {nota_final}')
 
 
-def calcula_grau_a(nota_pratica: float, nota_teorica: float):
+def calcula_grau_a(nota_pratica: float, nota_teorica: float) -> float:
     PORCENTAGEM_NOTA_TEORICA: float = 0.55
     PORCENTAGEM_NOTA_PRATICA: float = 0.45
     return (nota_teorica * PORCENTAGEM_NOTA_TEORICA) + (nota_pratica * PORCENTAGEM_NOTA_PRATICA)
 
 
-def calcula_grau_b(nota_laboratorio, nota_teorica, nota_extraclasse):
+def calcula_grau_b(nota_laboratorio: float, nota_teorica: float, nota_extraclasse: float) -> float:
     PORCENTAGEM_NOTA_LABORATORIO: float = 0.6
     PORCENTAGEM_NOTA_TEORICA: float = 0.2
     PORCENTAGEM_NOTA_EXTRACLASSE: float = 0.2
@@ -98,20 +98,20 @@ def calcula_grau_b(nota_laboratorio, nota_teorica, nota_extraclasse):
             nota_extraclasse * PORCENTAGEM_NOTA_EXTRACLASSE)
 
 
-def calcula_nota_final(grau_a, grau_b):
+def calcula_nota_final(grau_a: float, grau_b: float) -> float:
     PORCENTAGEM_GRAU_A: float = 0.33
     PORCENTAGEM_GRAU_B: float = 0.67
     return (grau_a * PORCENTAGEM_GRAU_A) + (grau_b * PORCENTAGEM_GRAU_B)
 
 
-def pede_dados_grau_a():
+def dados_grau_a() -> float:
     print('Olá, você digitará as notas equivalentes ao Grau A: \n')
     grau_a_pratica = float(input(f'Digite sua nota prática: \n'))
     grau_a_teorica = float(input(f'Digite sua nota teórica \n'))
     return calcula_grau_a(grau_a_pratica, grau_a_teorica)
 
 
-def pede_dados_grau_b():
+def dados_grau_b() -> float:
     print('Obrigado, agora você digitará as notas equivalentes ao Grau B: \n')
     grau_b_laboratorio = float(input(f'Digite sua nota de laboratorio: \n'))
     grau_b_teorica = float(input(f'Digite sua nota teorica \n'))
@@ -120,9 +120,9 @@ def pede_dados_grau_b():
 
 
 def exercicio_oito():
-    grau_a_final = pede_dados_grau_a()
-    grau_b_final = pede_dados_grau_b()
-    nota_final = calcula_nota_final(grau_a_final, grau_b_final)
+    grau_a_final: float = dados_grau_a()
+    grau_b_final: float = dados_grau_b()
+    nota_final: float = calcula_nota_final(grau_a_final, grau_b_final)
     print(f'\nSua nota final é {nota_final} parabéns! \n')
 
 
@@ -131,6 +131,6 @@ def exercicio_oito():
 # exercicio_tres()
 # exercicio_quatro()
 # exercicio_cinco()
-# exericio_seis()
+# exercicio_seis()
 # exercicio_sete()
 exercicio_oito()
