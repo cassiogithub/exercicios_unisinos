@@ -71,7 +71,9 @@ def exercicio_seis():
     perimetro_retangulo = a + b + c + d
     print(f'Perímetro de um retângulo {perimetro_retangulo}')
 
-    area_circulo = 3.14159 * e ** 2
+    PI = 3.14159
+    e_ao_quadrado = e ** 2
+    area_circulo = PI * e_ao_quadrado
     print(f'Area de círculo  {area_circulo}')
 
 
